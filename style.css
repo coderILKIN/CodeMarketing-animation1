@@ -25,7 +25,7 @@
     position: absolute;
     top: 540px;
     left: 100px;
-    animation: move 12s linear;
+    animation: move 10s ;
     /* animation-name: move;
   animation-duration: 10s; */
 
@@ -75,9 +75,17 @@
     35%{
         transform: translateX(200px) translateY(0px);
     }
-    50%{
-        transform: translateX(1000px) translateY(0px);
+
+    36%{
+        transform: translateX(200px) translateY(0px);
     }
+
+    40%{
+        transform: translateX(200px) translateY(0px);
+    }
+    /* 50%{
+        transform: translateX(1000px) translateY(0px);
+    } */
     /* 75%{
         transform: translateX(1000px) translateY(0px);
     } */
@@ -107,7 +115,8 @@
 }
 
 .weel-image img {
-    animation: prac 4s infinite;
+    animation: prac 1s linear 9;
+    /* animation-fill-mode: forwards; */
     width: 50px;
 }
 
@@ -129,10 +138,10 @@
 
 
 @keyframes prac{
-    0%{
+    from{
         transform:  rotateZ(0deg);
     }
-    100%{
+    to{
         transform: rotateZ(360deg);
     }
 }
@@ -148,7 +157,7 @@
     border-radius: 50%;
     background-color: red;
     border: 2px solid;
-    animation: redcolor 7s infinite;
+    animation: redcolor 10s infinite;
 
 }
 
@@ -161,7 +170,7 @@
     border-radius: 50%;
     background-color: yellow;
     border: 2px solid;
-    animation: yellowcolor 8s infinite;
+    animation: yellowcolor 10s infinite;
 
 }
 
@@ -174,7 +183,7 @@
     border-radius: 50%;
     background-color: green;
     border: 2px solid;
-    animation: greencolor 13s infinite;
+    animation: greencolor 14s infinite;
 
 }
 
@@ -271,9 +280,11 @@
     27%{
         background-color: black;
     }
-    28%{
+
+    45%{
         background-color: green;
     }
+  
     50%{
         background-color: green;
     }

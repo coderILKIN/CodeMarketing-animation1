@@ -1,0 +1,286 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.trafic-light {
+    background-image: url(./istockphoto-1456460315-640x640.png);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+}
+
+
+.traficlight-image {
+    position: absolute;
+    top: 250px;
+    left: 500px;
+}
+
+.car {
+    position: absolute;
+    top: 540px;
+    left: 100px;
+    animation: move 12s linear;
+    /* animation-name: move;
+  animation-duration: 10s; */
+
+}
+
+.car img {
+    width: 400px;
+}
+
+
+@keyframes move{
+    0%{
+        transform: translateX(0px) translateY(0px);
+    }
+    25%{
+        transform: translateX(200px) translateY(0px);
+    }
+    26%{
+        transform: translateX(200px) translateY(0px);
+    }
+    27%{
+        transform: translateX(200px) translateY(0px);
+    }
+    28%{
+        transform: translateX(200px) translateY(0px);
+    }
+    29%{
+        transform: translateX(200px) translateY(0px);
+    }
+    30%{
+        transform: translateX(200px) translateY(0px);
+    }
+    31%{
+        transform: translateX(200px) translateY(0px);
+    }
+    32%{
+        transform: translateX(200px) translateY(0px);
+    }
+    33%{
+        transform: translateX(200px) translateY(0px);
+    }
+
+    34%{
+        transform: translateX(200px) translateY(0px);
+    }
+
+    35%{
+        transform: translateX(200px) translateY(0px);
+    }
+    50%{
+        transform: translateX(1000px) translateY(0px);
+    }
+    /* 75%{
+        transform: translateX(1000px) translateY(0px);
+    } */
+    100%{
+        transform: translateX(calc(100vw - 400px)) translateY(0px);
+    }
+    
+}
+
+
+.trafic-light img {
+    width: 300px;
+}
+
+.car-image {
+    position: relative;
+}
+
+.car-img {
+    position: relative;
+}
+
+.weel-image {
+    position: absolute;
+   
+
+}
+
+.weel-image img {
+    animation: prac 4s infinite;
+    width: 50px;
+}
+
+.left-weel {
+    position: absolute;
+    left: 23px;
+    bottom: 6px;
+}
+
+.right-weel {
+    position: absolute;
+    left: 204px;
+    bottom: 1px;
+}
+
+
+
+
+
+
+@keyframes prac{
+    0%{
+        transform:  rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+
+
+
+.traficlight-image .red{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 15px;
+    right: 136px;
+    border-radius: 50%;
+    background-color: red;
+    border: 2px solid;
+    animation: redcolor 7s infinite;
+
+}
+
+.traficlight-image .yellow{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 47px;
+    right: 136px;
+    border-radius: 50%;
+    background-color: yellow;
+    border: 2px solid;
+    animation: yellowcolor 8s infinite;
+
+}
+
+.traficlight-image .green{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 78px;
+    right: 136px;
+    border-radius: 50%;
+    background-color: green;
+    border: 2px solid;
+    animation: greencolor 13s infinite;
+
+}
+
+
+
+@keyframes redcolor{
+    0%{
+        background-color: red;
+    }
+    25%{
+        background-color: red;
+
+    }
+    26%{
+        background-color: red;
+    }
+    27%{
+        background-color: red;
+    }
+    28%{
+        background-color: black;
+    }
+
+    75%{
+        background-color: black;
+    }
+    100%{
+        background-color: black;
+    }
+
+    
+}
+
+@keyframes yellowcolor{
+    0%{
+        background-color: black;
+    }
+
+    25%{
+        background-color: black;
+    }
+
+
+    26%{
+        background-color: black;
+    }
+
+    27%{
+        background-color: black;
+    }
+
+    28%{
+        background-color: yellow;
+    }
+
+    29%{
+        background-color: yellow;
+    }
+
+    30%{
+        background-color: yellow;
+    }
+
+    31%{
+        background-color: yellow;
+    }
+    32%{
+        background-color: yellow;
+    }
+
+    33%{
+        background-color: yellow;
+    }
+
+    50%{
+        background-color: black;
+    }
+    
+    100%{
+        background-color: black;
+    }
+
+    
+}
+
+@keyframes greencolor{
+    0%{
+        background-color: black;
+    }
+    26%{
+        background-color: black;
+    }
+
+    27%{
+        background-color: black;
+    }
+    28%{
+        background-color: green;
+    }
+    50%{
+        background-color: green;
+    }
+
+    100%{
+        background-color: green;
+    }
+
+    
+}
